@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Zaiv's TEST: Hotel</title>
+    <link rel="stylesheet"
+          href="./index.css">
+
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="hotel-info-photo">
+
+            <img class="photo"
+                 title="Elit Byblos Hotel-city"
+                 alt="Elit Byblos Hotel-city"
+                 src="https://source.unsplash.com/random/360x180" />
+
+
+            <div class="hotel-info">
+
+                <div class="city">דובאי</div>
+
+                <div class="dates">31.08 - 05.09</div>
+
+                <div class="hotel-row">
+                    <div class="hotel-name">ELIT BYBLOS HOTEL-CITY</div>
+                    <div class="hotel-stars">5</div>
+                </div>
+                <div class="hotel-descr">5 לילות | ארוחת בוקר | העברות</div>
+
+            </div>
+        </div>
+
+        <div class="price-descr">מחיר לאדם בהרכב שני מבוהרים</div>
+        <div class="price-row">
+            <a class="price-lnk"
+               href=""
+               target="_self">&#60 624$</a>
+            <div class="price-notes">באישור מיידי</div>
+        </div>
+
+
+        <script>
+            const starsAll = document.getElementsByClassName("hotel-stars");
+            for (const starsElm of starsAll) {
+                const iStars = +starsElm.textContent;
+                starsElm.textContent = "⭐".repeat(iStars);
+            }
+
+        </script>
+</body>
+
+</html>
